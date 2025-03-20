@@ -1,0 +1,19 @@
+{
+  "name": "tarea-acortamiento-urls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prouch4/Tarea-acortamiento-URLs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prouch4/Tarea-acortamiento-URLs/issues"
+  },
+  "homepage": "https://github.com/prouch4/Tarea-acortamiento-URLs#readme"
+}
