@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/prouch4/Tarea-acortamiento-URLs/issues"
   },
-  "homepage": "https://github.com/prouch4/Tarea-acortamiento-URLs#readme"
+  "homepage": "https://github.com/prouch4/Tarea-acortamiento-URLs#readme",
+  
+  "devDependencies": {
+  "tailwindcss": "^3.x.x",
+  "postcss": "^8.x.x",
+  "autoprefixer": "^10.x.x"
+}
+
 }

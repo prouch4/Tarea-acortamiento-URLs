@@ -1,38 +1,107 @@
-.App {
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: blue;
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a:hover {
+  color: darkblue;
+}
+
+.icon-color {
+  color: #000000;
+}
+
+
+body.dark-mode {
+  background-color: #121212;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body.dark-mode .theme-toggle-button {
+  background-color: #aed6ee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body.dark-mode .theme-toggle-button:hover {
+  background-color: #aed6ee;
+}
+
+body.dark-mode a {
+  color: #66ccff;
+}
+
+body.dark-mode a:hover {
+  color: #33bbff;
+}
+
+/* Estilo para el switch */
+.switch-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-checkbox {
+  display: none; /* Oculta el checkbox real */
+}
+
+.theme-toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-label:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-label {
+  background-color: #ccc; /* Color del switch cuando está activado */
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-label:before {
+  transform: translateX(26px); /* Mueve el círculo cuando está activado */
+}
+
+/* Estilos adicionales para el icono */
+.fa-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
