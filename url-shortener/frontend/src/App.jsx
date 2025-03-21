@@ -1,21 +1,10 @@
 import './App.css';
+import UrlShortener from "./components/url_shortener";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          poto
-        </a>
-      </header>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <UrlShortener />
     </div>
   );
 }
